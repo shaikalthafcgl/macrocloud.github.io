@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header img {
+    height: 40px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.auth-buttons a {
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.auth-buttons .sign-in {
+    border: 1px solid #0087ff;
+    color: #ff00ce;
+}
+.auth-buttons .register {
+    background-color: #ff5733;
+    color: #fff;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.hero .hero-left {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 240px;
+    height: 381px;
+    object-fit: cover;
+}
+
+.hero .hero-right {
+    position: absolute;
+    top: 183%;
+    right: 0;
+    width: 161px;
+    height: 468px;
+    object-fit: cover;
+}
+.hero h1 {
+    font-size: 2.5em;
+    color: #0087ff;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 2.2em;
+    color: #1e1e9a;
+    margin-bottom: 40px;
+}
+.hero a {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 40px;
+}
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #ff00ce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.section.light {
+    background-color: #fff;
+}
+.section h2 {
+    font-size: 2em;
+    color: #1e1e9a;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+/* Image Styling */
+.section img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position below */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Animation for smooth effect */
+}
+
+/* Add a class to make image visible on scroll */
+.section img.visible {
+    opacity: 1; /* Make image visible */
+    transform: translateY(0); /* Final position */
+}
+
+.section .btn {
+    padding: 10px 20px;
+    border: 1px solid #ff00ce;
+    color: #ff00ce;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.feature {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+.feature img {
+    height: 100px;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position below */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Animation for smooth effect */
+}
+
+/* Add a class to make image visible on scroll */
+.feature img.visible {
+    opacity: 1; /* Make image visible */
+    transform: translateY(0); /* Final position */
+}
+.feature h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+.cta {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+.cta h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.cta p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+.cta .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.card .btn {
+    padding: 10px 20px;
+    background-color: #ff00ce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .features, .cta .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
