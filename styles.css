@@ -32,13 +32,18 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center; /* Aligns the icon and text in a row */
 }
-.auth-buttons .sign-in {
-    border: 1px solid #0087ff;
-    color: #ff00ce;
+.auth-buttons .login-icon {
+    color: #333;
 }
-.auth-buttons .register {
-    background-color: #ff5733;
+.auth-buttons .login-icon i {
+    margin-right: 8px; /* Space between the icon and the text */
+    font-size: 18px; /* Adjust icon size if necessary */
+}
+.auth-buttons .Try-for-free {
+    background-color: #2e844a;
     color: #fff;
 }
 .hero {
@@ -76,8 +81,9 @@ nav a {
     margin-bottom: 40px;
 }
 .hero a {
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #333;
+    font-weight: bold;
     margin-bottom: 40px;
 }
 .hero .btn {
